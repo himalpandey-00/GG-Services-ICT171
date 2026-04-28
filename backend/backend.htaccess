@@ -1,0 +1,13 @@
+# GG Services – Backend Folder Protection
+# -----------------------------------------
+# Blocks direct browser access to PHP files in this folder.
+# PHP files are only callable from within the server, not from the web.
+# This protects config.php and prevents source code exposure.
+
+Options -Indexes
+
+# Allow only submit_quote.php and submit_application.php to be called
+<FilesMatch "^(?!submit_quote|submit_application).*\.php$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>

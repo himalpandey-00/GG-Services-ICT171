@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get a free cleaning quote from GG Services Perth. No obligation — we'll call you back within 24 hours with a tailored price for your home or business." />
+  <meta name="author" content="GG Services Pty Ltd" />
+  <title>Book a Quote | GG Services – Professional Cleaning Perth, WA</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/gglogo.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<header class="nav-wrapper" role="banner">
+  <nav class="nav-inner" aria-label="Main navigation">
+    <!-- Logo — always returns to homepage -->
+    <a href="index.html" class="logo" title="GG Services — Home">
+      <img src="img/gglogo.png" alt="GG Services logo" />
+    </a>
+
+    <!-- Desktop navigation links -->
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="products.html">Buy Products</a></li>
+      <li><a href="careers.html">Careers</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="quote.html" class="nav-cta">Book a Quote</a></li>
+    </ul>
+
+    <!-- Mobile hamburger button -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile dropdown menu -->
+  <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="products.html">Buy Products</a>
+    <a href="careers.html">Careers</a>
+    <a href="about.html">About Us</a>
+    <a href="quote.html" class="nav-cta" style="margin:4px 12px;border-radius:8px;text-align:center">Book a Quote</a>
+  </div>
+</header>
+
+
+<section class="page-hero" aria-label="Book a quote hero">
+  <p class="eyebrow">Free Consultation</p>
+  <h1>Book a Quote</h1>
+  <p>Fill in your details and we'll reach out within 24 hours with a tailored quote — no obligation, no pressure.</p>
+</section>
+
+<div class="quote-layout">
+
+  <!-- Left: explanation -->
+  <div class="quote-intro">
+    <h2>Get a Tailored Quote<br>for Your Cleaning Needs</h2>
+    <p>Every property is different. Rather than offering a one-size-fits-all price, we take the time to understand your specific needs and provide a quote that is accurate, transparent, and competitive.</p>
+    <p>We serve homes, offices, healthcare facilities, and commercial premises across Perth, WA.</p>
+
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="step-number" aria-hidden="true">1</div>
+        <div>
+          <strong>Submit your request</strong>
+          <p>Tell us about your property, the service you need, and your preferred timing.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="step-number" aria-hidden="true">2</div>
+        <div>
+          <strong>We'll call you back</strong>
+          <p>Our team contacts you within 2–4 business hours to confirm pricing and availability.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="step-number" aria-hidden="true">3</div>
+        <div>
+          <strong>We get to work</strong>
+          <p>Our trained cleaners arrive on time and deliver a spotless result — guaranteed.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right: form card -->
+  <div class="quote-form-card" role="form" aria-label="Quote request form">
+    <h2>Request a Call Back</h2>
+    <p class="quote-form-subtitle">
+      Fields marked <span style="color:var(--green-mid)">*</span> are required.
+      We respond within 2–4 hours Mon–Fri, 8am–5pm AWST.
+    </p>
+
+    <div id="quoteFormBody">
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="q-name">Full Name <span class="req" aria-hidden="true">*</span></label>
+          <input type="text" id="q-name" name="fullName" placeholder="Himal Pandey" autocomplete="name" required aria-required="true" />
+          <p class="error-message" id="err-name" role="alert">Please enter your name.</p>
+        </div>
+        <div class="form-group">
+          <label for="q-phone">Phone <span class="req" aria-hidden="true">*</span></label>
+          <input type="tel" id="q-phone" name="phone" placeholder="04XX XXX XXX" autocomplete="tel" required aria-required="true" />
+          <p class="error-message" id="err-phone" role="alert">Please enter a valid phone number.</p>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="q-email">Email Address <span class="req" aria-hidden="true">*</span></label>
+        <input type="email" id="q-email" name="email" placeholder="you@example.com" autocomplete="email" required aria-required="true" />
+        <p class="error-message" id="err-email" role="alert">Please enter a valid email address.</p>
+      </div>
+
+      <div class="form-group">
+        <label for="q-address">Property Address <span class="req" aria-hidden="true">*</span></label>
+        <input type="text" id="q-address" name="address" placeholder="123 Example St, Murdoch WA 6150" autocomplete="street-address" required aria-required="true" />
+        <p class="error-message" id="err-address" role="alert">Please enter your property address.</p>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="q-suburb">Suburb <span class="req" aria-hidden="true">*</span></label>
+          <input type="text" id="q-suburb" name="suburb" placeholder="Murdoch" required aria-required="true" />
+          <p class="error-message" id="err-suburb" role="alert">Please enter your suburb.</p>
+        </div>
+        <div class="form-group">
+          <label for="q-postcode">Postcode</label>
+          <input type="text" id="q-postcode" name="postcode" placeholder="6150" maxlength="4" autocomplete="postal-code" />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="q-service">Type of Service <span class="req" aria-hidden="true">*</span></label>
+        <select id="q-service" name="serviceType" required aria-required="true">
+          <option value="">— Select a service —</option>
+          <option>End of Lease Cleaning</option>
+          <option>Regular House Cleaning</option>
+          <option>Office Building Cleaning</option>
+          <option>Carpet Cleaning</option>
+          <option>Window and Glass Cleaning</option>
+          <option>Hazard Cleaning</option>
+          <option>Floor Strip and Sealing</option>
+          <option>Aged Care Cleaning</option>
+          <option>Hospital Cleaning</option>
+          <option>Kitchen Cleaning</option>
+          <option>Other / Not Sure</option>
+        </select>
+        <p class="error-message" id="err-service" role="alert">Please select a service type.</p>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="q-hours">Hours Required</label>
+          <select id="q-hours" name="hoursRequired">
+            <option>Not sure</option>
+            <option>2–3 hours</option>
+            <option>3–5 hours</option>
+            <option>5–8 hours</option>
+            <option>Full day (8+ hours)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="q-preferred">Preferred Date / Time</label>
+          <input type="text" id="q-preferred" name="preferredTime" placeholder="e.g. Any morning, ASAP" />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="q-notes">Anything Else We Should Know?</label>
+        <textarea id="q-notes" name="notes" placeholder="Pets at home, access instructions, property size, specific areas of concern…"></textarea>
+      </div>
+
+      <button class="form-submit" id="quoteSubmitBtn" onclick="submitQuote()" type="button">
+        <span id="quoteBtnText">Book a Quote →</span>
+        <div class="spinner" id="quoteSpinner" aria-hidden="true"></div>
+      </button>
+
+    </div>
+
+    <!-- Success state -->
+    <div class="quote-success" id="quoteSuccess" role="status" aria-live="polite">
+      <div class="success-check-icon" aria-hidden="true">
+        <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
+          <circle cx="26" cy="26" r="26" fill="#e8f4f0"/>
+          <circle cx="26" cy="26" r="20" fill="#1a4b3a"/>
+          <path d="M16 26l7 7 13-13" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <h3>Quote Request Received</h3>
+      <p>Thank you, <strong id="successName"></strong>. Your request has been submitted successfully.</p>
+      <p style="margin-top:8px;font-size:13.5px">Our team will review your details and call you within <strong>24 hours</strong> to discuss your tailored quote. Please keep your phone nearby.</p>
+      <div class="success-ref-box" id="successRefBox"></div>
+      <a href="services.html" style="display:inline-block;margin-top:18px;font-size:13.5px;font-weight:500;color:var(--green-mid)">← Explore our services</a>
+    </div>
+
+  </div>
+</div>
+
+
+<footer class="footer" role="contentinfo">
+  <div class="container footer-inner">
+
+    <!-- Brand column -->
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo-wrap" title="GG Services — Home">
+        <img src="img/gglogo.png" alt="GG Services logo" class="footer-logo" />
+      </a>
+      <p>Professional cleaning solutions for Perth, Western Australia.</p>
+      <p style="font-size:12px;color:rgba(255,255,255,.25)">© 2026 GG Services Pty Ltd</p>
+    </div>
+
+    <!-- Company links -->
+    <div class="footer-links">
+      <h4>Company</h4>
+      <a href="about.html">About Us</a>
+      <a href="careers.html">Careers</a>
+      <a href="quote.html">Book a Quote</a>
+    </div>
+
+    <!-- Services links -->
+    <div class="footer-links">
+      <h4>Services</h4>
+      <a href="services.html#house">House Cleaning</a>
+      <a href="services.html#commercial">Commercial</a>
+      <a href="services.html#healthcare">Healthcare</a>
+      <a href="services.html">All Services</a>
+    </div>
+
+    <!-- Social links -->
+    <div class="footer-links">
+      <h4>Connect</h4>
+      <a href="https://www.youtube.com/watch?v=yNJJ0OiDOLA" target="_blank" rel="noopener noreferrer"><svg class="footer-social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.5A3 3 0 00.5 6.2 31.4 31.4 0 000 12a31.4 31.4 0 00.5 5.8 3 3 0 002.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 002.1-2.1A31.4 31.4 0 0024 12a31.4 31.4 0 00-.5-5.8zM9.75 15.5V8.5l6.25 3.5-6.25 3.5z"/></svg> YouTube</a>
+      <a href="https://www.linkedin.com/in/h1mal-pandey/" target="_blank" rel="noopener noreferrer"><svg class="footer-social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.26 2.37 4.26 5.44v6.3zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM3.56 20.45h3.55V9H3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg> LinkedIn</a>
+      <a href="https://www.facebook.com/h1malpandey" target="_blank" rel="noopener noreferrer"><svg class="footer-social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.07C24 5.41 18.63 0 12 0S0 5.41 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.8-4.7 4.54-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.95.93-1.95 1.88v2.27h3.32l-.53 3.5h-2.79V24C19.61 23.1 24 18.1 24 12.07z"/></svg> Facebook</a>
+      <a href="https://www.instagram.com/h1mal_pandey/" target="_blank" rel="noopener noreferrer"><svg class="footer-social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85 0 3.2-.01 3.58-.07 4.85-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07-3.2 0-3.58-.01-4.85-.07-3.26-.15-4.77-1.7-4.92-4.92C2.17 15.58 2.16 15.2 2.16 12c0-3.2.01-3.58.07-4.85C2.38 3.86 3.9 2.31 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.7.07 7.05.01 8.33 0 8.74 0 12c0 3.26.01 3.67.07 4.95.2 4.36 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24c3.26 0 3.67-.01 4.95-.07 4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95 0-3.26-.01-3.67-.07-4.95-.2-4.35-2.62-6.78-6.98-6.98C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 100 12.32A6.16 6.16 0 0012 5.84zM12 16a4 4 0 110-8 4 4 0 010 8zm6.4-11.85a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z"/></svg> Instagram</a>
+    </div>
+
+  </div>
+
+  <!-- Footer bottom bar -->
+  <div class="footer-bottom">
+    <p>© Copyright 2026, GG Services Pty Ltd. All rights reserved.</p>
+    <div class="footer-legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+/*
+ * Quote form validation and submission.
+ *
+ * Google Sheets integration:
+ *  1. Open your Sheet → Extensions → Apps Script
+ *  2. Paste the doPost() function from the comment below
+ *  3. Deploy → New Deployment → Web App → Anyone → Deploy
+ *  4. Paste the Web App URL into APPS_SCRIPT_URL below
+ *
+ * doPost() function for Apps Script:
+ * -----------------------------------
+ * function doPost(e) {
+ *   try {
+ *     var sheet = SpreadsheetApp
+ *       .openById('1ExyIlQih4uZDXuCbYXtS0l2b6POVrEp9zp3bfEsQ3bo')
+ *       .getSheetByName('Sheet1');
+ *     var d = JSON.parse(e.postData.contents);
+ *     if (sheet.getLastRow() === 0)
+ *       sheet.appendRow(['Timestamp','Name','Phone','Email','Address','Suburb','Postcode','Service','Hours','Preferred','Notes']);
+ *     sheet.appendRow([
+ *       new Date().toLocaleString('en-AU', {timeZone:'Australia/Perth'}),
+ *       d.name, d.phone, d.email, d.address, d.suburb, d.postcode,
+ *       d.service, d.hours, d.preferred, d.notes
+ *     ]);
+ *     return ContentService
+ *       .createTextOutput(JSON.stringify({status:'ok'}))
+ *       .setMimeType(ContentService.MimeType.JSON);
+ *   } catch(err) {
+ *     return ContentService
+ *       .createTextOutput(JSON.stringify({status:'error', message: err.toString()}))
+ *       .setMimeType(ContentService.MimeType.JSON);
+ *   }
+ * }
+ */
+
+/* Paste your Apps Script Web App URL here to enable Google Sheets submission */
+const APPS_SCRIPT_URL = 'YOUR_APPS_SCRIPT_WEB_APP_URL_HERE';
+
+/* Validation rules */
+const QUOTE_RULES = [
+  { id: 'q-name',    errId: 'err-name',    check: v => v.trim().length > 1 },
+  { id: 'q-phone',   errId: 'err-phone',   check: v => /^[\d\s\+\(\)]{8,}$/.test(v.trim()) },
+  { id: 'q-email',   errId: 'err-email',   check: v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()) },
+  { id: 'q-address', errId: 'err-address', check: v => v.trim().length > 3 },
+  { id: 'q-suburb',  errId: 'err-suburb',  check: v => v.trim().length > 1 },
+  { id: 'q-service', errId: 'err-service', check: v => v !== '' },
+];
+
+/* Clear errors on input */
+QUOTE_RULES.forEach(rule => {
+  const el = document.getElementById(rule.id);
+  if (el) el.addEventListener('input', () => {
+    el.classList.remove('field-error');
+    const errEl = document.getElementById(rule.errId);
+    if (errEl) errEl.style.display = 'none';
+  });
+});
+
+/* Pre-select service if passed via URL param */
+window.addEventListener('DOMContentLoaded', () => {
+  const params = new URLSearchParams(window.location.search);
+  const svcParam = params.get('service');
+  if (svcParam) {
+    const sel = document.getElementById('q-service');
+    const opt = [...sel.options].find(o => o.value.toLowerCase().replace(/\s/g,'-').includes(svcParam.split('-')[0]));
+    if (opt) sel.value = opt.value;
+  }
+});
+
+async function submitQuote() {
+  /* Validate all required fields */
+  let isValid = true;
+
+  QUOTE_RULES.forEach(rule => {
+    const input = document.getElementById(rule.id);
+    const errEl = document.getElementById(rule.errId);
+    if (!rule.check(input.value)) {
+      input.classList.add('field-error');
+      if (errEl) errEl.style.display = 'block';
+      isValid = false;
+    } else {
+      input.classList.remove('field-error');
+      if (errEl) errEl.style.display = 'none';
+    }
+  });
+
+  if (!isValid) {
+    document.querySelector('.field-error')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    return;
+  }
+
+  /* Show spinner */
+  document.getElementById('quoteBtnText').style.display = 'none';
+  document.getElementById('quoteSpinner').style.display = 'block';
+  document.getElementById('quoteSubmitBtn').disabled = true;
+
+  const payload = {
+    name:      document.getElementById('q-name').value.trim(),
+    phone:     document.getElementById('q-phone').value.trim(),
+    email:     document.getElementById('q-email').value.trim(),
+    address:   document.getElementById('q-address').value.trim(),
+    suburb:    document.getElementById('q-suburb').value.trim(),
+    postcode:  document.getElementById('q-postcode').value.trim(),
+    service:   document.getElementById('q-service').value,
+    hours:     document.getElementById('q-hours').value,
+    preferred: document.getElementById('q-preferred').value.trim(),
+    notes:     document.getElementById('q-notes').value.trim(),
+  };
+
+  /* Submit to Google Sheets if URL is configured */
+  try {
+    if (APPS_SCRIPT_URL !== 'YOUR_APPS_SCRIPT_WEB_APP_URL_HERE') {
+      await fetch(APPS_SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+    }
+  } catch (e) {
+    console.warn('Google Sheets submission note:', e);
+  }
+
+  /* Show success state after short delay */
+  setTimeout(() => {
+    const ref = 'GGQ-' + Date.now().toString().slice(-6);
+    document.getElementById('quoteFormBody').style.display = 'none';
+    document.getElementById('successName').textContent = payload.name.split(' ')[0];
+    document.getElementById('successRefBox').innerHTML = '<p style="font-size:12px;color:var(--text-muted);margin-top:14px;padding:10px 14px;background:var(--off-white);border-radius:6px;text-align:left"><strong>Reference:</strong> ' + ref + '<br><strong>Service:</strong> ' + payload.service + '<br><strong>Submitted:</strong> ' + new Date().toLocaleString("en-AU", {timeZone:"Australia/Perth"}) + '</p>';
+    document.getElementById('quoteSuccess').style.display = 'block';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, 1000);
+}
+</script>
+
+</body>
+</html>
