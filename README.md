@@ -155,3 +155,19 @@ Auto-renewal enabled via Certbot systemd timer. Certificate valid for 89 days, r
 *GG Services Pty Ltd — "Your Growth, Our Commitment."*  
 *Perth, Western Australia | pandey-himal.com.np*  
 *Student: 35352086 | ICT171 | Murdoch University*
+
+---
+
+## Admin Dashboard
+
+A password-protected admin dashboard demonstrates live Apache → PHP → MySQL integration.
+
+**URL:** https://pandey-himal.com.np/admin.php  
+**Password:** GGAdmin2026
+
+### What it shows
+- Live server info — Apache version, PHP version, MySQL version, Server IP
+- Total quote requests pulled from MySQL in real time
+- Total job applications pulled from MySQL in real time
+- Full submission tables with reference numbers, names, emails, services, timestamps
+- Proves end-to-end integration: Apache serves PHP which queries MySQL and returns live data
