@@ -127,7 +127,7 @@ in the quote_requests or job_applications table.
   3. Click quote_requests or job_applications
   4. Click "Browse" to see all rows
 
-### To download a CV:
+## To download a CV:
   CVs are stored in uploads/cv/ on the server.
   Use FTP / File Manager or SSH to access them.
   They cannot be accessed via the browser (intentionally blocked).
